@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { Menu, MenuItem } from "semantic-ui-react";
+import { Menu, MenuItem, ButtonGroup, Button } from "semantic-ui-react";
 
 export default class Nav extends Component {
 
@@ -7,10 +7,19 @@ export default class Nav extends Component {
         return (
             <Menu fixed={"top"}>
                 <MenuItem>
-                    A dummy logo
+                    Tony Hu的个人主页
                 </MenuItem>
                 <MenuItem>
-                    A dummy logo
+                    Blog
+                </MenuItem>
+                <MenuItem>
+                    个人简介
+                </MenuItem>
+                <MenuItem position='right'>
+                    <ButtonGroup>
+                        <Button>中</Button>
+                        <Button>En</Button>
+                    </ButtonGroup>
                 </MenuItem>
             </Menu>
         );
